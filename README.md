@@ -1,4 +1,4 @@
-# Client Hints User Agent with Prmission Policy
+# Client Hints User Agent with Permission Policy
 
 Test for Google Chrome team
 
