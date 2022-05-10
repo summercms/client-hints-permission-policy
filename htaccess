@@ -1,0 +1,9 @@
+RewriteEngine On
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+
+Header set Permissions-Policy "accelerometer=(self), autoplay=(self), camera=(), sec-ch-device-memory=(self), sec-ch-rtt=(self), sec-ch-downlink=(self), sec-ch-ect=(self), sec-ch-width=(self), sec-ch-viewport-width=(self), sec-ch-viewport-height=(self), sec-ch-dpr=(self), sec-ch-ua-arch=(self), sec-ch-ua-bitness=(self), sec-ch-ua-mobile=(self), sec-ch-ua-model=(self), sec-ch-ua-platform=(self), sec-ch-ua-platform-version=(self), sec-ch-ua=(self), sec-ch-ua-full-version-list=(self), sec-ch-ua-wow64=(self), cross-origin-isolated=(self), display-capture=(self), document-domain=(self), encrypted-media=(self), fullscreen=(self), geolocation=(self), gyroscope=(self), interest-cohort=(), magnetometer=(self), microphone=(), midi=(), payment=(self), picture-in-picture=(self), publickey-credentials-get=(self), screen-wake-lock=(self), sync-xhr=(self), usb=(self), web-share=(self), xr-spatial-tracking=(self)"
