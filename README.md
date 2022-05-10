@@ -2,6 +2,18 @@
 
 Test for Google Chrome team
 
+### Console Warnings
+
+![alt text](https://github.com/summercms/client-hints-permission-policy/blob/master/screenshot.png)
+
+## How to reproduce results
+
+1. Either open the php/html files.
+
+or
+
+2. Add the `.htaccess` file to a server (quicker method).
+
 ## `Sec-` prefix
 
 Adding new request headers increases the risk that legacy server systems
